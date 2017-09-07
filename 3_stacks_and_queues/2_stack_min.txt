@@ -1,0 +1,6 @@
+Have each node keep track of the min including it and below. So on push, set min of new node
+to min of next, or current value depending on which is lower.
+
+Or have a second stack, everytime you push to original stack, check if value is lower than
+top of second stack, push to second stack as well if true. When popping, check if value is equal
+to top of second stack, if so pop as well from second stack.

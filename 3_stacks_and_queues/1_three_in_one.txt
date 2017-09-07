@@ -1,0 +1,7 @@
+In Java, use a fixed size array. Segway into 3 parts, and track each stack separately.
+Make sure each individual stack does not overflow. Also keep track of each stacks top index.
+
+Or use reszing stacks within arrays. When one stack is full, shift everything over.
+
+Python? Well good question, use expanding lists. Keep track of index for each stack. Slice and
+shift for additions. Not very size efficient.
