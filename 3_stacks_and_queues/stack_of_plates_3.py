@@ -1,10 +1,10 @@
-import Stack
+import StackModule as SM
 
 
 class SetOfStacks:
 
     def __init__(self, limit):
-        first_stack = Stack()
+        first_stack = SM.Stack()
         self.stacks = [first_stack]
         self.limit = limit
 
@@ -12,7 +12,7 @@ class SetOfStacks:
         if self.stacks[-1].size < self.limit:
             self.stacks[-1].push(value)
         else:
-            new_stack = Stack(value)
+            new_stack = SM.Stack(value)
             self.stacks.append(new_stack)
 
     def pop(self):
